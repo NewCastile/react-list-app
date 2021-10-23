@@ -1,0 +1,77 @@
+.app-container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.feed-container * + * {
+    margin-top: 10px;
+}
+
+.tweet-container {
+    border: 1px var(--contrast-color) solid;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.tweet-header {
+    width: max-content;
+    color: var(--primary-color);
+}
+
+.tweet-content {
+    padding: 20px;
+}
+
+.message, .tweet-interactions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.tweet-interactions > * + * {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.tweet-interactions > * {
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 15px;
+}
+
+.tweet-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.tweet-date > * {
+    width: 14ch;
+    text-align: center;
+}
+
+.btn { 
+    font-weight: 800;
+    border: 1px var(--contrast-color) solid;
+    border-radius: 15px;
+    padding: 20px;
+    width: max-content;
+}
+
+.post-tw-btn  {
+    color: var(--primary-color);
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form > * + * {
+    margin-top: 10px;
+    width: 100%;
+}

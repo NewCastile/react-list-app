@@ -1,0 +1,1 @@
+exports.supportedLocales = ['en-US', 'de', 'pl', 'it']
