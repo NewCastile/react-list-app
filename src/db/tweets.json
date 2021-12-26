@@ -1,153 +1,22 @@
 {
-    "tweets": [
-        {
-            "user": "Amanda",
-            "date": "20-06-2021",
-            "content": "lorem ipsum dolor",
-            "coments": [
-                {
-                    "user": "Eduardo",
-                    "date":"18-06-2021",
-                    "content": "lorem 1",
-                    "retweets": 3,
-                    "coments": [],
-                    "likes": 12
-                },
-                {
-                    "user": "Andrea",
-                    "date":"18-06-2021",
-                    "content": "lorem 2",
-                    "retweets": 3,
-                    "coments": [],
-                    "likes": 12
-                },
-                {
-                    "user": "Nathan",
-                    "date":"18-06-2021",
-                    "content": "lorem 3",
-                    "retweets": 3,
-                    "coments": [],
-                    "likes": 12
-                }
-            ],
-            "retweets": 14,
-            "likes": 86,
-            "tweets": [
-                {
-                    "date": "18-06-2021",
-                    "content": "lorem ipsum dolor aflic est",
-                    "coments": 74,
-                    "retweets": 37,
-                    "likes": 144,
-                    "id": 2
-                },
-                {
-                    "date": "22-06-2021",
-                    "content": "lorem ipsum ist nec",
-                    "coments": 12,
-                    "retweets": 3,
-                    "likes": 8,
-                    "id": 3
-                },
-                {
-                    "date": "24-06-2021",
-                    "content": "lorem ips...",
-                    "coments": 105,
-                    "retweets": 1300,
-                    "likes": 273,
-                    "id": 4
-                }
-            ],
-            "id": 1
-        },
-        {
-            "user": "Ethan",
-            "date": "18-06-2021",
-            "content": "lorem ipsum dolor aflic est",
-            "coments": 74,
-            "retweets": 37,
-            "likes": 144,
-            "tweets": [
-                {
-                    "date": "22-06-2021",
-                    "content": "lorem ipsum ist nec",
-                    "coments": 12,
-                    "retweets": 3,
-                    "likes": 8,
-                    "id": 3
-                }
-            ],
-            "id": 2
-        },
-        {
-            "user": "Andrea",
-            "date": "22-06-2021",
-            "content": "lorem ipsum ist nec",
-            "coments": 12,
-            "retweets": 3,
-            "likes": 8,
-            "tweets": [
-                {
-                    "date": "22-06-2021",
-                    "content": "lorem ipsum ist nec",
-                    "coments": 12,
-                    "retweets": 3,
-                    "likes": 8,
-                    "id": 3
-                },
-                {
-                    "date": "24-06-2021",
-                    "content": "lorem ips...",
-                    "coments": 105,
-                    "retweets": 1300,
-                    "likes": 273,
-                    "id": 4
-                }
-            ],
-            "id": 3
-        },
-        {
-            "user": "Eduardo",
-            "date": "24-06-2021",
-            "content": "lorem ips...",
-            "coments": 105,
-            "retweets": 1300,
-            "likes": 273,
-            "tweets": [
-                {
-                    "date": "22-06-2021",
-                    "content": "lorem ipsum ist nec",
-                    "coments": 12,
-                    "retweets": 3,
-                    "likes": 8,
-                    "id": 1
-                },
-                {
-                    "date": "18-06-2021",
-                    "content": "lorem ipsum dolor aflic est",
-                    "coments": 74,
-                    "retweets": 37,
-                    "likes": 144,
-                    "id": 2
-                },
-                {
-                    "date": "22-06-2021",
-                    "content": "lorem ipsum ist nec",
-                    "coments": 12,
-                    "retweets": 3,
-                    "likes": 8,
-                    "id": 3
-                },
-                {
-                    "date": "24-06-2021",
-                    "content": "lorem ips...",
-                    "coments": 105,
-                    "retweets": 1300,
-                    "likes": 273,
-                    "id": 4
-                }
-            ],
-            "id": 4
-        }
-    ]
+  "tweets": [
+    {
+      "user": "Amanda",
+      "content": "lorem ipsum",
+      "date": "26-12-2021",
+      "coments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "id": 3
+    },
+    {
+      "user": "Ethan",
+      "content": "Lorem",
+      "date": "26-12-2021",
+      "coments": 0,
+      "retweets": 0,
+      "likes": 0,
+      "id": 4
+    }
+  ]
 }
