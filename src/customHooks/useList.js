@@ -1,41 +1,41 @@
+/** @format */
+
 //Custom Hook
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react"
 
-function useList(url, type) {
-    const [data, setData] = useState(null)
-    const [isLoading, setIsLoading] = useState(true)
-    const [error, setError] = useState(null)
+function useList(url) {
+	const [data, setData] = useState(null)
+	const [isLoading, setIsLoading] = useState(true)
+	const [error, setError] = useState(null)
+	useEffect(() => {
+		const abortCont = new AbortController()
 
-    useEffect(() => {
-        const abortCont = new AbortController()
-        
-        async function getData() {
-            try {
-                const res = await fetch(url, { signal: abortCont.signal })
-                if (!res.ok) throw Error("Couldn't fetch the data for that resource")
+		async function getData() {
+			try {
+				const res = await fetch(url, { signal: abortCont.signal })
+				if (!res.ok) throw Error("Couldn't fetch the data for that resource")
 
-                const data = await res.json()
-                if (type == "profile") setData(data[0].tweets)
-                if (type == "feed") setData(data)
-                setIsLoading(false)
-                setError(null)     
+				const data = await res.json()
+				setData(data)
+				setIsLoading(false)
+				setError(null)
+			} catch (err) {
+				if (err.name == "AbortError") {
+					alert("fetch aborted")
+				}
+				setIsLoading(false)
+				setError(err.message)
+			}
+		}
 
-            } catch (err) {
-                if (err.name == "AbortError") { console.log('fetch aborted') }
-                setIsLoading(false)
-                setError(err.message)
-            }
-        }
+		getData()
 
-        getData()
-        
-        return function() {
-            abortCont.abort()
-        }
+		return function () {
+			abortCont.abort()
+		}
+	}, [url])
 
-    }, [url])
-
-    return { data, isLoading, error }
+	return { data, isLoading, error }
 }
 
 export default useList
